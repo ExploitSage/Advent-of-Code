@@ -6,7 +6,7 @@ for line in sys.stdin:
     if line.strip() == "":
         elves.append(0)
     else:
-        elves[-1]+=int(line.strip())
+        elves[-1] += int(line.strip())
 
 elves_sorted = sorted(elves)
 

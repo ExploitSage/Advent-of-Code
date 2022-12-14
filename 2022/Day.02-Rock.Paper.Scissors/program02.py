@@ -10,10 +10,10 @@ for line in sys.stdin:
     match = tuple(line.strip().split())
 
     if match[1] == 'X':
-        score+=list(filter(lambda x:match[0] in x, lose_scores))[0][1]
+        score += list(filter(lambda x:match[0] in x, lose_scores))[0][1]
     if match[1] == 'Y':
-        score+=list(filter(lambda x:match[0] in x, draw_scores))[0][1]+3
+        score += list(filter(lambda x:match[0] in x, draw_scores))[0][1]+3
     if match[1] == 'Z':
-        score+=list(filter(lambda x:match[0] in x, win_scores))[0][1]+6
+        score += list(filter(lambda x:match[0] in x, win_scores))[0][1]+6
 
 print(score)

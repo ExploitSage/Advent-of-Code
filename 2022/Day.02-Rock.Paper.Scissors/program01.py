@@ -10,12 +10,12 @@ score = 0
 
 for line in sys.stdin:
     match = tuple(line.strip().split())
-    score+=(list(filter(lambda x:match[1] in x, choice_score))[0][1])
+    score += (list(filter(lambda x:match[1] in x, choice_score))[0][1])
     if match in win_conditions:
-        score+=6
+        score += 6
     elif match in draw_conditions:
-        score+=3
+        score += 3
     elif match in lose_conditions:
-        score+=0
+        score += 0
 
 print(score)
