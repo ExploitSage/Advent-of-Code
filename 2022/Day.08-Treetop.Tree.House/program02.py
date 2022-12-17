@@ -23,7 +23,6 @@ for i in range(len(tree_rows[0])):
                 if tree == tree_rows[i][j]:
                     break
         
-        
         down = 0
         if i != len(tree_rows[0])-1:
             down_seg = tree_cols[j][i+1:]
